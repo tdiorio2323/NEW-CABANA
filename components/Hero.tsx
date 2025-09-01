@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         style={{
           backgroundImage: `url('${imageUrl}')`,
           opacity: bgOpacity,
-          transform: `translateY(${offsetY * 0.5}px)`,
+          transform: `translateY(${offsetY * 0.4}px)`,
           willChange: 'transform, opacity',
         }}
       >
@@ -82,7 +82,8 @@ const Hero: React.FC = () => {
         className="relative z-10 text-center px-4"
         style={{
           opacity: contentOpacity,
-          willChange: 'opacity',
+          transform: `translateY(${offsetY * 0.2}px)`,
+          willChange: 'opacity, transform',
         }}
       >
         <h1 className="text-7xl md:text-9xl font-black tracking-tighter uppercase holographic-text">
