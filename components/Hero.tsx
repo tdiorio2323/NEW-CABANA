@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Button from './ui/Button';
 import { GoogleGenAI } from '@google/genai';
 
@@ -96,9 +97,11 @@ const Hero: React.FC = () => {
           <Button variant="primary" size="lg" onClick={handleJoinWaitlistClick} className="w-full sm:w-64">
             Join Waitlist
           </Button>
-          <Button variant="outline" size="lg" className="w-full sm:w-64">
-            Early Access Login
-          </Button>
+          <Link to="/login" className="w-full sm:w-64">
+            <Button variant="outline" size="lg" className="w-full">
+              Early Access Login
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
