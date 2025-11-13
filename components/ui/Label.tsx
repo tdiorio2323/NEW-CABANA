@@ -18,4 +18,3 @@ const Label = React.forwardRef<
 Label.displayName = 'Label';
 
 export default Label;
-export { Label };
